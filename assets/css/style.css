@@ -875,3 +875,12 @@ color: #505050;
 cursor: pointer;
 margin-left: 15px;
 }
+
+/**************** TAC************ */
+#tarteaucitronIcon {
+  display: none !important;
+}
+
+#tarteaucitron #tarteaucitronServices #tarteaucitronAllAllowed.tarteaucitronIsSelected, button.tarteaucitronAllow {
+  background-color: #3b8af2 !important;
+}

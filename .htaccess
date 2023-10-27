@@ -1,0 +1,22 @@
+RewriteEngine On
+
+# Redirect specific URL to "https://montepal.fr/"
+RewriteRule ^fr/contact/contact-elevateur-de-palettes\.html$ https://montepal.fr/ [R=301,L]
+
+# Redirect specific URL to "https://montepal.fr/en"
+RewriteRule ^en/contact/contact-pallet-lift\.html$ https://montepal.fr/en [R=301,L]
+
+# Redirect specific URL to "https://montepal.fr/en"
+RewriteRule ^es/contact/contacto-elevador-de-palets\.html$ https://montepal.fr/en [R=301,L]
+
+# Redirect URLs starting with "/fr/page/" to "https://montepal.fr"
+RewriteCond %{REQUEST_URI} ^/fr/page/ [NC]
+RewriteRule ^ https://montepal.fr [R=301,L]
+
+# Redirect URLs starting with "/en/page/" to "https://montepal.fr/en/"
+RewriteCond %{REQUEST_URI} ^/en/page/ [NC]
+RewriteRule ^ https://montepal.fr/en/ [R=301,L]
+
+# Redirect URLs starting with "/es/page/" to "https://montepal.fr/en/"
+RewriteCond %{REQUEST_URI} ^/es/page/ [NC]
+RewriteRule ^ https://montepal.fr/en/ [R=301,L]
